@@ -1,0 +1,168 @@
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  position: fixed; /* Stay in place */
+  width: 30%;
+  max-width: 300px;
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #ffffff; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  padding: 24px 63px 0 24px;
+  border-right: #D1D0D366 1px solid;
+}
+
+.sidenav.open {
+  width: 40%;
+  min-width: 250px;
+}
+
+.sidenav.close {
+  width: 0;
+  padding: 0;
+}
+
+/* The navigation menu links */
+/* .sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #98949E;
+  display: block;
+  transition: 0.3s;
+} */
+
+.sidenav a.logo {
+  height: 35px;
+  width: 112px;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.sidenav .btn-collapse img {
+  height: 25px;
+  width: 25px;
+}
+
+.sidenav ul {
+  padding: 0;
+  margin: 24px 0 0 0;
+  text-align: start;
+}
+
+.sidenav ul li {
+  padding: 8px 24px 8px 0px;
+  gap: 12px;
+  margin-left: 24px;
+}
+
+.sidenav ul li.menu-header {
+  font-size: 10px;
+  line-height: 20px;
+  color: #98949E;
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+.sidenav ul li a {
+  text-decoration: none;
+  color: #98949E;
+}
+
+.sidenav .profile-container {
+  border-top: #D1D0D366 solid 1px;
+  height: 145px;
+  width: 100%;
+  padding: 24px;
+  gap: 24px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .sidenav .profile-container {
+    width: 80%;
+  }
+}
+
+.sidenav .profile-container .profile-content .profile-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.sidenav .profile-container .profile-content .profile-wrapper img {
+  height: 36px;
+  width: 36px;
+  margin-right: 12px;
+}
+
+.sidenav .profile-container .profile-content .profile-wrapper .profile-detail {
+  text-align: left;
+  width: 104px;
+  height: 39px;
+}
+
+.sidenav .profile-container .profile-content .profile-wrapper .profile-detail .profile-name {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.sidenav .profile-container .profile-content .profile-wrapper .profile-detail .profile-position {
+  color: #98949E;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 20px;
+}
+
+.sidenav .profile-container .logout-btn {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: #8F0A13;
+  width: 100%;
+  margin-top: 24px;
+  background-color: #FEF5F6;
+  border: none;
+  padding: 0;
+  display: flex;
+  height: 34px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left 0.5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .sidenav {
+    width: 0; /* 0 width - change this with JavaScript */
+  }
+}

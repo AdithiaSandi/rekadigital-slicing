@@ -1,0 +1,381 @@
+/* =========BANNER========= */
+
+.banner {
+  background-color: #5d5fef;
+  padding: 12px;
+  border-radius: 8px;
+  gap: 16px;
+  color: white;
+}
+
+.banner .description {
+  max-width: 341px;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 1.5%;
+}
+
+.banner .container {
+  margin-top: 12px;
+}
+
+.banner .container .row {
+  min-height: 45px;
+  justify-content: space-evenly;
+}
+
+.banner .container .row .search-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  min-height: 45px;
+  background-color: white;
+}
+
+@media screen and (max-width: 767px) {
+  .banner .container .row .search-wrapper {
+    /* padding-right: 0; */
+    /* margin-right: 12px; */
+  }
+}
+
+.banner .container .row .search-wrapper svg {
+  background-color: white;
+  height: 100%;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-right: none;
+}
+
+.banner .container .row div button {
+  height: 45px;
+  color: white;
+}
+
+.banner .container .row div button.add-btn {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 8px;
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1423px) {
+  .banner .container .row div button.add-btn {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 1115px) and (max-width: 1169px) {
+  .banner .container .row div button.add-btn {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 1061px) and (max-width: 1114px) {
+  .banner .container .row div button.add-btn {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1060px) {
+  .banner .container .row div button.add-btn {
+    font-size: 13px;
+  }
+
+  .banner .container .row .col-md-2 button.foreground {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .banner .container .row div button.add-btn {
+    font-size: 12px;
+  }
+
+  .banner .container .row .col-md-2 button.foreground {
+    font-size: 10px;
+  }
+}
+
+.banner .container .row .search-wrapper .form-control {
+  height: 100%;
+  max-width: 275px;
+  margin: 0 5px;
+  border: none;
+  color: #d1d0d3;
+  background-color: white;
+  margin: 0;
+  border-radius: 0;
+  font-size: 12px;
+  line-height: 18px;
+  border-left: none;
+}
+
+input,
+textarea,
+input:focus,
+textarea:focus {
+  outline: none !important;
+}
+
+.banner .container .row .search-wrapper button {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: -1%;
+  display: flex;
+  width: 78px;
+  max-height: 37px;
+  border-radius: 8px;
+  padding: 8px 16px 8px 16px;
+  gap: 12px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.banner .container .row .col-md-2,
+.banner .container .row .col-md-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.banner .container .row .col-md-2 button,
+.banner .container .row .col-md-1 button {
+  background: transparent;
+  border: none;
+  border-radius: 8px;
+}
+
+.banner .container .row .col-md-2 .filter-btn,
+.banner .container .row .col-md-2 .refresh-btn,
+.banner .container .row .col-md-1 .print-btn {
+  filter: blur(6px);
+}
+
+.banner .container .row .col-md-2 button.foreground,
+.banner .container .row .col-md-1 button.foreground {
+  position: absolute;
+  background: transparent;
+}
+
+/* ==========SIDE-CARDS========== */
+
+.content-container .row .cards-container {
+}
+
+@media screen and (width >= 1200px) {
+  .content-container .row .cards-container .top-card {
+    max-width: 227px;
+  }
+
+  .content-container .row .cards-container .bottom-card {
+    max-width: 227px;
+  }
+}
+
+@media screen and (width < 1200px) {
+  .content-container .row .cards-container .top-card {
+    align-items: center;
+  }
+
+  .content-container .row .cards-container .bottom-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.content-container .row .cards-container .top-card {
+  background-color: #5d5fef;
+  color: white;
+  min-height: 265px;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content-container .row .cards-container .top-card .text {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: -2%;
+  max-width: 149px;
+  min-height: 90px;
+}
+
+.content-container .row .cards-container .top-card button {
+  background-color: #5d5fef;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 8px;
+}
+
+.content-container .row .cards-container .bottom-card {
+  background-color: #fafafa;
+  border-radius: 8px;
+  min-height: 595px;
+  margin-top: 16px;
+  padding: 16px;
+}
+
+.content-container .row .cards-container .bottom-card .title {
+  min-height: 58px;
+  max-width: 750px;
+  font-size: 24px;
+  line-height: 28.8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.content-container .row .cards-container .bottom-card .date {
+  color: #98949e;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 1.5%;
+  min-height: 24px;
+  max-width: 150px;
+  margin-bottom: 12px;
+}
+
+.content-container .row .cards-container .bottom-card .items .top-item {
+  background-color: #ffffff;
+  min-height: 62px;
+  max-width: 195px;
+  border-radius: 8px;
+  padding: 10px;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -1%;
+  margin-bottom: 8px;
+}
+
+.content-container .row .cards-container .bottom-card .items .item {
+  color: #98949e;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: -1%;
+  margin-bottom: 8px;
+  padding: 10px;
+}
+
+/* =========TABLE========= */
+
+.row.table {
+  margin-top: 28px;
+}
+
+.row.table #example_wrapper table thead {
+  background-color: #fafafa;
+}
+
+.row.table #example_wrapper table tr.odd td {
+  box-shadow: none;
+}
+
+.row.table #example_wrapper table th {
+  border: none;
+  color: #98949e;
+}
+
+.row.table #example_wrapper table td {
+  border: none;
+}
+
+.row.table #example_wrapper .table-wrapper table tbody tr {
+  box-shadow: none;
+}
+
+.row.table #example_wrapper .table-wrapper table tbody tr td {
+  box-shadow: none;
+}
+
+.row.table #example_wrapper table tbody tr td button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: #fafafa;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: -1%;
+  padding: 4px 12px;
+  gap: 8px;
+}
+
+.row.table #example_wrapper table tbody tr td button.detail-btn {
+  max-width: 90px;
+  min-height: 29px;
+}
+
+.row.table #example_wrapper table tbody tr td button.edit-btn,
+.row.table #example_wrapper table tbody tr td button.delete-btn {
+  max-width: 36px;
+  min-height: 29px;
+}
+
+.row.table #example_wrapper table tbody tr td button.detail-btn svg {
+  margin-right: 8px;
+}
+
+.row.table #example_wrapper .example-bottom-wrapper {
+  background-color: #fafafa;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1069px) {
+  .row.table #example_wrapper .example-bottom-wrapper {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .row.table #example_wrapper .example-bottom-wrapper #example_paginate {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .row.table #example_wrapper .example-bottom-wrapper #example_paginate #example_previous {
+    padding-left: 0;
+    border-left: none;
+  }
+
+  .row.table #example_wrapper .example-bottom-wrapper #example_paginate span a {
+    padding: 6.5px 16px;
+    margin: 0;
+    border: none;
+  }
+}
+
+.row.table #example_wrapper .example-bottom-wrapper #example_info {
+  color: #98949e;
+  max-width: 618px;
+  min-height: 24px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -1%;
+  float: none;
+}
+
+.row.table #example_wrapper .example-bottom-wrapper #example_paginate {
+  float: none;
+}

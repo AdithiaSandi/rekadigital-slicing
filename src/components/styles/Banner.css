@@ -1,0 +1,63 @@
+.content-container .container {
+  width: 100%;
+  max-width: 100%;
+}
+
+.content-container .container .row div .span {
+  justify-content: center;
+  text-align: center;
+}
+
+.content-container .container .row .col-1 {
+    border-bottom: #dee2e6 solid 1px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+    .content-container .container .row .col-1 {
+        border-bottom: none;
+    }
+}
+
+.content-container .container .row .col-1 .btn-wrapper .toggle-btn {
+  border: none;
+  background-color: white;
+}
+
+.content-container .container .row .col-1 .btn-wrapper .toggle-btn svg {
+  min-height: 36px;
+  min-width: 36px;
+  color: #0d6efd;
+}
+
+#main h1 {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+#main span {
+  color: #98949e;
+}
+
+#main .content-nav .nav {
+  justify-content: flex-end;
+}
+
+#main .content-nav .nav .nav-item a {
+  color: #98949e;
+  border: none;
+  padding: 12px 66px;
+}
+
+#main .content-nav .nav .nav-item .active {
+  color: #5d5fef;
+  font-weight: 700;
+  font-size: 14px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: #5d5fef 2px solid;
+  border-collapse: collapse;
+}
